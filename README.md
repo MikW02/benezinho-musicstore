@@ -77,7 +77,7 @@ Deverá implementar:
 
 # Diagrama de Classes de Domínio
 
-<img src="documentacao/DIAGRAMAS/Music.png">
+<img src="documentacao/DIAGRAMAS/MUSIC.png">
 
  
 
