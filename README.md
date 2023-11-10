@@ -5,7 +5,7 @@
 | **ALUNO:**                               | **TURMA:**      1TDSA 2023    |
 | **PROFESSOR:** Benefrancis do Nascimento |                               |
 | **CP - VI**                              | 10/11/2023                    |
-
+| **PONTOS VÁLIDOS**                       | 10                            |
 # Sumário
 
 [Estudo de caso ](#_Estudo_de_caso)
