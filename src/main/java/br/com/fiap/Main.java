@@ -27,7 +27,7 @@ public class Main {
     public static void main(String[] args) {
         var server = startServer();
         System.out.println( String.format(
-                "Benezinho Music Store App 🍿🤓👍🏽   started with endpoints available " +
+                "Benezinho Music Store App 🎤🤓👍🏽   started with endpoints available " +
                         "as %s%nHit Ctrl-C to stop it....", BASE_URI ) );
         try {
             System.in.read();
