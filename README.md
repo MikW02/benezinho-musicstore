@@ -71,7 +71,6 @@ Alterar o arquivo contido em **documentacao/equipe.txt** para incluir o RM do al
         1. (0,5) Implementar Corretamente o método **public static MusicDTO of(Music m)**
         2. (1,5) Implementar Corretamente o método **public static Music of(MusicDTo dto)**
 
-Deverá implementar:
 
 <a id="_Diagrama_de_Classes"></a>
 
