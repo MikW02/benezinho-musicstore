@@ -13,9 +13,9 @@ public interface Repository<T, U> {
 
     public T findById(U id);
 
-    public T persist(T t);
+    public T persiste(T t);
 
-    public T findByName(String texto);
+
 
     public default void fecharObjetos(ResultSet rs, Statement st, Connection con) {
         try {
@@ -27,5 +27,5 @@ public interface Repository<T, U> {
         }
     }
 
-
+    public T findByName(String texto);
 }

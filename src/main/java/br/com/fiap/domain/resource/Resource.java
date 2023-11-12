@@ -10,4 +10,6 @@ public interface Resource<T, U> {
 
     public Response persist(T t);
 
+
+
 }

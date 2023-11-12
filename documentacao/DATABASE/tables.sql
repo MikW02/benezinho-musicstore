@@ -13,20 +13,23 @@
 --  DDL for Table TB_GENRE
 --------------------------------------------------------
 
-CREATE TABLE "TB_ARTIST"
-(	"ID_ARTIST" NUMBER(19,0),
-     "NM_ARTIST" VARCHAR2(255 CHAR),
-     "NATIONALITY" VARCHAR2(255 CHAR)
-    ) ;
+CREATE SEQUENCE artist_sequence START WITH 1 INCREMENT BY 1;
+
+CREATE TABLE "TB_ARTISTA" (
+                              "ID_ARTISTA" NUMBER(19,0) DEFAULT artist_sequence.NEXTVAL PRIMARY KEY,
+                              "NM_ARTISTA" VARCHAR2(255 CHAR),
+                              "NACIONALIDADE" VARCHAR2(255 CHAR)
+);
 
 
-CREATE UNIQUE INDEX  "IDX_TB_ARTIST_ID" ON  "TB_ARTIST" ("ID_ARTIST");
+
+CREATE UNIQUE INDEX  "IDX_TB_ARTISTA_ID" ON  "TB_ARTISTA" ("ID_ARTISTA");
 --------------------------------------------------------
 --  Constraints for Table TB_ARTIST
 --------------------------------------------------------
 
-ALTER TABLE  "TB_ARTIST" MODIFY ("ID_ARTIST" NOT NULL ENABLE);
-ALTER TABLE  "TB_ARTIST" ADD PRIMARY KEY ("ID_ARTIST");
+ALTER TABLE  "TB_ARTISTA" MODIFY ("ID_ARTISTA" NOT NULL ENABLE);
+ALTER TABLE  "TB_ARTISTA" ADD PRIMARY KEY ("ID_ARTISTA");
 
 --------------------------------------------------------
 --  DDL for Table TB_MOVIE
@@ -57,7 +60,7 @@ ALTER TABLE  "TB_MUSIC" ADD PRIMARY KEY ("ID_MUSIC");
 --------------------------------------------------------
 
 ALTER TABLE  "TB_MUSIC" ADD CONSTRAINT "TB_MUSIC_FK_ARTIST" FOREIGN KEY ("ARTIST")
-    REFERENCES  "TB_ARTIST" ("ID_ARTIST") ENABLE;
+    REFERENCES  "TB_ARTISTA" ("ID_ARTISTA") ENABLE;
 
 --------------------------------------------------------
 --  DDL for Sequence SQ_ARTIST

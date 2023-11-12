@@ -1,2 +1,6 @@
-RM:......... NOME: ......................TURMA:................
-RM:......... NOME: ......................TURMA:................
+RM:RM551382 NOME: MICHAEL LEON TURMA:1tdsa
+RM:RM97677 NOME: LUCAS FELIX TURMA: tdsa
+
+Anotação:
+Professor se puder fazer esse codigo do zero em aula ficaria bem agradecido, meu pc deu problema e tive que formatar agora perdi
+tudoque ja tava configurado no postman (e inclusive é a segunda vez fazendo esse trab :( )

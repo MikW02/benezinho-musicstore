@@ -1,5 +1,7 @@
 package br.com.fiap;
 
+import br.com.fiap.domain.entity.Artist;
+import br.com.fiap.domain.service.ArtistService;
 import br.com.fiap.infra.ConnectionFactory;
 import br.com.fiap.infra.configuration.cors.CORSFilter;
 import org.glassfish.grizzly.http.server.HttpServer;
@@ -31,6 +33,22 @@ public class Main {
                     Benezinho Music Store App 🎤🤓👍🏽      
                     started with endpoints available as %s%nHit Ctrl-C to stop it....
                     """, BASE_URI ) );
+
+        ArtistService artistService = new ArtistService();
+
+
+        Artist artist = new Artist();
+        artist.setId(1L);
+        artist.setName("MIKE");
+        artist.setNationality("mike");
+
+
+        Artist artistsalvo =  artistService.persist(artist);
+
+
+
+
+
         try {
             System.in.read();
             server.stop();
